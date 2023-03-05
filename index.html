@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I❤️RPG!!!</title>
+    <style>
+      * {
+        background-color: #182b1a;
+        color: #109050;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+      }
+
+      body {
+        background-image: url("https://assets-global.website-files.com/5efc0159f9a97ba05a8b2902/5f1eaefd298aae487507da69_rpg-maker-xp-battle-system-bg.jpg?w=2000");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1 {
+        border: 4px solid #9fd7bb;
+        margin: 10px 0px 20px 0px;
+        padding: 2px;
+        font-size: 30px;
+        box-shadow: 2px 5px 2px 5px #0c4428;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        border: 3px solid #9fd7bb;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        border: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 0 0 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .rpg-image1 {
+        border: #9fd7bb 2px solid;
+        padding: 10px;
+      }
+      .imageOne {
+        margin: 0px 0px 15px 0px;
+      }
+      .imageTwo {
+        margin: 0px 0px 15px 120px;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 11px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #109050;
+        color: #9fd7bb;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .storyTime {
+        border: #9fd7bb 2px dashed;
+        margin: 20px 0px 10px 0px;
+      }
+      .storyTimeTwo {
+        border: #9fd7bb 2px dashed;
+        margin: 20px 0px 30px 0px;
+      }
+      a {
+        color: #9fd7bb;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titleSubtitle">
+        <h1>ROLEPLAYING GAMES! 🐉⚔️👸🧙</h1>
+        <h2>Learn a little more about this game with endless possibilities</h2>
+      </div>
+      <p class="rpg-image1">
+        <img
+          class="imageOne"
+          src="https://cibersistemas.pt/wp-content/uploads/2020/12/3773522-untitled-2.jpg"
+          alt="The Stranger Things scene where they play RPG"
+        />
+        You may look like a gigantic nerd for nonplayers who may be watching
+        from afar, but it's fun, I swear! 🤓
+      </p>
+      <p class="storyTime">
+        Story time 📖: did you know that the RPG roots grow as back as the Han
+        Chinese era? There's even stories as far as from the 16th century about
+        traveling teams of players who performed a form of improvisational
+        theatre known as the <i>Commedia dell'arte</i>, with stock situations,
+        stock characters and improvised dialogue.
+      </p>
+      <p class="rpg-image1">
+        <img
+          class="imageTwo"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/737/original/imagem_2023-01-27_215541393.png?1674867354"
+          alt="A picture of me and my friends playing RPG"
+        />
+        Here's how it looks like when you're in real life: lots of mess, pen and
+        paper, lego toys and an improvised map.
+      </p>
+      <p class="storyTimeTwo">
+        On the mid 70s, RPG evolved to a whole complete level: it became a game
+        genre, with a lot of incredible titles, such as (my personal favorites)
+        Skyrim, Tibia and Runescape.
+      </p>
+      <a href="" target="_blank" class="learn-more"></a>
+      <button>👉 Click here for an example of a (small) RPG script</button>
+      <h1 class="rpgTitle"></h1>
+      <p class="rpgScript"></p>
+      <p class="diceRoll"></p>
+      <footer>
+        This page was build by
+        <a
+          href="www.linkedin.com/in/mariana-pires-dev"
+          target="_blank"
+          class="footerLink"
+          >Mariana Pires</a
+        >
+        with lots of creativity and huge amounts of coffee
+      </footer>
+    </div>
+    <script>
+      function script() {
+        let name = prompt("What is your name?");
+        let species = prompt(
+          "Would you prefer to be a human, a werewolf or an elf?"
+        );
+        let rpgClass = prompt(
+          "Would you prefer to be a fighter, a druid or a bard?"
+        );
+        let dice = prompt(
+          "Let's pretend you just rolled a dice, which number will it roll?"
+        );
+        alert(
+          "Keep in mind that there are a lot of other races and classes that I didn't exemplify here because it would take a lot of time, but feel free to insert them as you wish. It will work! 😉 "
+        );
+        let rpgTitle = document.querySelector(".rpgTitle");
+        let rpgScript = document.querySelector(".rpgScript");
+        let diceRoll = document.querySelector(".diceRoll");
+        rpgTitle.innerHTML = `Welcome to the tale of ${name}, a ${rpgClass} of the ${species} race`;
+        rpgScript.innerHTML = `The story of ${name} starts on a cold night. A letter was sent to ${name}'s shack asking for help. No name was signed and it simply contained the following: 
+        "I'm begging to all aspiring adventurers on the land to help me find my child. The princess Rhua went missing and I'm granting that the one who finds her, will get at least a quarter of all of my gold." 
+        Of course that meant leaving behind ${name}'s village, but it was time for another adventure, so in the very next morning, even before the sun had risen, ${name} was already out.
+        The first thing ${name} notice on the way out of their village is a dragon.`;
+
+        if (dice <= 2) {
+          diceRoll.innerHTML = `The dragon unfortunely prevents ${name} from moving further and does not seems to care about ${name} protests asking him to get out of the way. His name is Dragus and he's the elderly guardian of the village who seems to understand that ${name} is too young for those adventures. So, using the ${rpgClass} skills seems to be the only option. You concentrate... And more... And more... And more... And...
+          Nothing happens. The whole village watches as you fail miserably as Dragus gives a heartwarming laugh.
+          -Maybe next time, my child.
+          THE END?`;
+        }
+        if (dice <= 4) {
+          diceRoll.innerHTML = `The dragon unfortunely prevents ${name} from moving further, thus using the ${rpgClass} skills seems to be the only option. His name is Dragus and he's the elderly guardian of the village who seems to understand that ${name} is too young for those adventures. As soon as ${name} starts concentrating, Dragus, with a laugh, talks to you.
+          -My child, are you sure? You're barely old enough.
+          ${name} stares blankly. Still concentrating.
+          -I will move, but you won't come back here until you find that princess.
+          ${name} smiles. 
+          THE END?`;
+        }
+        if (dice == 6) {
+          diceRoll.innerHTML = `The dragon tries to prevent ${name} from moving further at first, but then, with a sudden change of mind, opens his mouth on a smile. His name is Dragus and he's the elder guardion of the village. But today, ${name} is lucky.
+          -I let you pass if I come with you.
+          ${name} promptly jump into his tails, climbing scale by scale on the dragon's back.`;
+        } else {
+          diceRoll.innerHTML = `A gigantic meteor flies over the village and everyone, including ${name} is dead. 
+          This is what you get for trying to get smart with a RPG narrator. A dice only have 6 sides. Too funny.`;
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", script);
+    </script>
+  </body>
+</html>
